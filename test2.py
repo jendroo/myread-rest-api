@@ -1,0 +1,12 @@
+{"isbn": "1-914870-03-4",
+ "title": "Land admit majority this through continue.",
+ "description": "When team challenge eat then all drive. Then president or likely contain Democrat final.Bit us history change television. Five avoid drop fill.\nFood fall per indeed. Security high me develop difference dream growth performance. I rather rise ready enter.Challenge military catch hotel practice. Commercial risk might rate you black.",
+ "page_count": 400,
+ "category": "ar",
+ "published_date": 2004,
+ "publisher": "Morrison LLC",
+ "edition": 3,
+ "book_format": "eb",
+ "tags": [1, 2, 3],
+ "lang": "English",
+ "authors": [{"id": 1, "role": "author"}, {"id": 32, "role": "co_author"}]}

@@ -14,3 +14,5 @@ dev-install:
 	pip install -r requirements/dev.txt
 dev-test:
 	python3 manage.py test --settings=config.settings.dev
+dev-showm:
+	python3 manage.py showmigrations  --settings=config.settings.dev
