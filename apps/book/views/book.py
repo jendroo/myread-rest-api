@@ -20,7 +20,7 @@ def list_books(request):
 @api_view(['POST'])
 def create_book(request):
     with transaction.atomic():
-        data = request.data #retrieve request body
+        data = request.data #retrieve request body in native Python data type
         authors = data['authors']
 
         book = CreateBookSerializer(data=data)
