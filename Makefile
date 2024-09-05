@@ -16,3 +16,7 @@ dev-test:
 	python3 manage.py test --settings=config.settings.dev
 dev-showm:
 	python3 manage.py showmigrations  --settings=config.settings.dev
+prod-migrate:
+	python3 manage.py migrate --settings=config.settings.prod
+prod-start:
+	python3 manage.py runserver --settings=config.settings.prod
