@@ -1,13 +1,20 @@
-from .dev import *
-
 import environ
 
+from .base import *
 
 env = environ.Env(DEBUG=(bool, True))
-environ.Env.read_env(str(BASE_DIR / ".env_prod"))
+environ.Env.read_env(str(BASE_DIR / ".env.prod"))
 
 SECRET_KEY = env.str("SECRET_KEY")
 DEBUG = env.bool("DEBUG")
+
+ALLOWED_HOSTS = ["*"]
+
+THIRD_PARTY_APP = [
+    "django_extensions",
+]  # third party apps goe here
+
+INSTALLED_APPS = INSTALLED_APPS + THIRD_PARTY_APP
 
 
 DATABASES = {
@@ -20,3 +27,12 @@ DATABASES = {
         "PORT": env.str("DB_PORT"),
     }
 }
+
+# If you want to use sqlite3 instead, then uncomment this and comment the above.
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
