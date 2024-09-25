@@ -10,8 +10,8 @@ from apps.book.serializers import AuthorSerializer
 
 # Function-based view
 @api_view(['GET']) #by default, it uses a 'GET'
-#@authentication_classes([BasicAuthentication])
-@permission_classes ([IsAuthenticated])
+@authentication_classes([BasicAuthentication])
+#@permission_classes ([IsAuthenticated])
 def list_authors(request):
     authors = Author.objects.all()
 

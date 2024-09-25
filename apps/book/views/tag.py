@@ -10,7 +10,7 @@ from apps.book.serializers import TagSerializer
 curl http://127.0.0.1:8000/api/v1/book/tag/
 token_header = 'Authentication: Token ea6fa5e750f1f9471653c339e93d53aed1b3fcc0'
 
-curl -H 'Authorization: Token ea6fa5e750f1f9471653c339e93d53aed1b3fcc0' http://127.0.0.1:8000/api/v1/book/tag
+curl -H 'Authorization: Token e482f80cadf5fc72db608413c019990a245ee4b0' http://127.0.0.1:8000/api/v1/book/author
 """
 
 # Function-based view
